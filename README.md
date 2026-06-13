@@ -115,6 +115,20 @@ project-showcase/
 
 ---
 
+## Screenshots
+
+> See [screenshots.md](screenshots.md) for the full gallery with captions.
+
+| Inbox (WhatsApp + Zoho CRM) | Token Cost Analytics |
+|---|---|
+| ![Inbox](assets/01-inbox-whatsapp-ai-response.png) | ![Analytics](assets/12-token-cost-analytics-dashboard.png) |
+
+| AI Configuration — Providers | BullMQ Queue Monitor |
+|---|---|
+| ![AI Providers](assets/05-ai-config-providers.png) | ![Queues](assets/08-queue-infrastructure-manager.png) |
+
+---
+
 ## Documentation Index
 
 | Document | Description |

@@ -1,22 +1,27 @@
 # Assets Directory
 
-This directory is reserved for screenshots, screen recordings, and other visual assets demonstrating the Drishti Marketing OS interface and features.
+Contains UI screenshots of the Drishti Marketing OS platform.
 
-## Suggested Assets
+> Screenshots have been reviewed before inclusion. Customer message content visible in chat screenshots is real production data from consenting users of an astrology services business — shown here in the context of demonstrating AI response quality and UI design.
 
-| Asset | Description | Status |
-|-------|-------------|--------|
-| `inbox-screenshot.png` | Multi-pane shared inbox showing conversation list, chat, and Zoho sidebar | Pending |
-| `ai-draft-card.png` | Supervised AI Draft mode showing Suggested Reply card with Approve/Reject | Pending |
-| `ai-settings.png` | AI settings page with provider toggle and knowledge base uploader | Pending |
-| `analytics-dashboard.png` | Token cost analytics dashboard broken down by provider/model | Pending |
-| `queue-dashboard.png` | BullMQ queue monitoring dashboard | Pending |
-| `templates-page.png` | WhatsApp template broadcast campaign console | Pending |
+## Screenshot Index
 
-## Notes
+| File | Page / Feature |
+|------|---------------|
+| `01-inbox-whatsapp-ai-response.png` | WhatsApp inbox — AI auto-response + Zoho CRM sidebar |
+| `02-inbox-facebook-auto-mode.png` | Facebook Messenger inbox — Auto AI mode |
+| `03-inbox-instagram-auto-mode.png` | Instagram DM inbox — Auto AI mode |
+| `04-ai-config-guidelines-rag.png` | AI Config — Brand prompt + RAG similarity sliders |
+| `05-ai-config-providers.png` | AI Config — Multi-provider routing (OpenAI / Claude / Gemini) |
+| `06-ai-config-knowledge-base.png` | AI Config — Qdrant vector KB ingestion table |
+| `07-ai-config-playground.png` | AI Config — Real-time context simulation playground |
+| `08-queue-infrastructure-manager.png` | BullMQ Queue monitor (4 queues) |
+| `09-templates-broadcast.png` | Meta WhatsApp template broadcast console |
+| `10-templates-create-modal.png` | Create WhatsApp template multi-step modal |
+| `11-security-settings-2fa.png` | Security settings — Operator profile + 2FA setup |
+| `12-token-cost-analytics-dashboard.png` | Token cost analytics — 30-day spend by provider/model |
 
-- Screenshots have been excluded from this public portfolio to protect proprietary UI and prevent customer data exposure.
-- Architecture diagrams (in the `/diagrams` folder) are available as Mermaid markdown for rendering in any compatible viewer (GitHub, VS Code, Obsidian, etc.)
+See [screenshots.md](../screenshots.md) for the full gallery with captions.
 
 ---
 
