@@ -9,6 +9,7 @@ sequenceDiagram
     participant Redis as Redis / BullMQ
     participant IW as Inbound Worker
     participant RAG as RAG Pipeline
+    participant Qdrant as Qdrant Vector DB
     participant LLM as AI Switchboard
     participant DB as MongoDB
     participant Socket as Socket Service
@@ -29,9 +30,10 @@ sequenceDiagram
     Socket-->>Agent: Real-time inbox update
 
     Note over IW: isAiActive check
-    IW->>RAG: retrieveContext(query embedding)
-    RAG->>LLM: Generate 1536-dim embedding
-    RAG->>DB: Cosine search Qdrant (threshold > 0.3)
+    IW->>RAG: retrieveContext(query text)
+    Note over RAG: Generate 1536-dim embedding via OpenAI API
+    RAG->>Qdrant: Cosine similarity search (threshold > 0.3)
+    Qdrant-->>RAG: Return semantic chunks
     IW->>DB: Fetch last 10 messages (history)
     IW->>LLM: invoke(5-part context: brand + RAG + history + Zoho + query)
     LLM->>DB: Log tokens + cost → CostTracking
