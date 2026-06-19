@@ -49,7 +49,7 @@ erDiagram
         string messageType "text, template, image, document, interactive"
         string mediaUrl
         string status "sent, delivered, read, failed, pending, draft"
-        string metaWamid UK_SPARSE
+        string metaWamid UK "sparse"
         string metaTemplateName
         string metaError
         date createdAt
@@ -58,7 +58,7 @@ erDiagram
 
     AISession {
         ObjectId _id PK
-        ObjectId conversationId FK_UK
+        ObjectId conversationId FK, UK
         string provider "claude, openai, gemini"
         string modelName
         string systemPromptOverride
