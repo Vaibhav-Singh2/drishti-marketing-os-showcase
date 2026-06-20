@@ -108,9 +108,9 @@ project-showcase/
 │   ├── system-design.md          ← Deep-dive system design decisions
 │   ├── engineering-decisions.md  ← Key technical choices + rationale
 │   ├── challenges-and-solutions.md ← Real engineering problems solved
-│   ├── rag-pipeline.md           ← End-to-end RAG Ingestion & Query details
 │   └── my-contributions.md       ← Specific engineering contributions
 ├── diagrams/                     ← Standalone Mermaid diagram sources
+│   └── rag-pipeline.md           ← RAG Ingestion & Query pipeline flow
 └── assets/                       ← Supporting visual assets
 ```
 
@@ -138,7 +138,6 @@ project-showcase/
 | [System Design](docs/system-design.md) | Design tradeoffs, scalability, database schema, API design |
 | [Engineering Decisions](docs/engineering-decisions.md) | Why Bun, Qdrant, BullMQ, and other key choices were made |
 | [Challenges & Solutions](docs/challenges-and-solutions.md) | Hard problems solved in production |
-| [RAG Ingestion & Query](docs/rag-pipeline.md) | Asynchronous indexing, sanitization, and context retrieval pipeline |
 | [My Contributions](docs/my-contributions.md) | What I personally built and owned |
 
 ---
